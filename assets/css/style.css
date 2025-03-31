@@ -1,0 +1,60 @@
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.wrapper {
+  position: relative;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* Stack the content vertically */
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.box {
+  background-color: #1a8cb8;
+  width: 400px;
+  min-height: 150px;
+  border: 15px solid;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: black;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Second Box - Moves Below First Box */
+#second-box {
+  background-color: darkcyan;
+  width: 100%;
+  max-width: 800px;
+  min-width: 500px;
+  min-height: 150px;
+  border: 15px solid;
+  padding: 20px;
+  color: black;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Third Box - Positioned to the Right of the First Box */
+#third-box {
+  width: 200px;
+  min-height: 100px;
+  background-color: #1a8cb8;
+  border: 15px solid;
+  padding: 20px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 20px; /* Position it at the top of the page */
+  left: calc(100% + 15px); /* Position it to the right of the first box */
+}
